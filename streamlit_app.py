@@ -63,7 +63,8 @@ session=cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME')).to_pandas()
 ingredients_list=st.multiselect(
     'Choose up to 5 ingredients:'
-    ,my_dataframe
+    # ,my_dataframe 
+    ,my_dataframe["FRUIT_NAME"].tolist()
     ,max_selections=5
 )
 
