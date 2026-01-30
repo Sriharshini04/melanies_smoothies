@@ -52,8 +52,8 @@ st.write("Choose the fruits you want in your custom Smoothie!")
 # ----------------------------------------
 name_on_order = st.text_input("Name on Smoothie:")
 
-st.write("The name on your Smoothie will be:")
-st.write(name_on_order)
+st.write("The name on your Smoothie will be:",name_on_order)
+
 
 # ----------------------------------------
 # Snowflake Connection (uses Streamlit Secrets)
